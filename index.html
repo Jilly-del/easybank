@@ -15,7 +15,7 @@
   </head>
   <body>
     <!-- Nav -->
-    <div class="container px-28 py-5 navx sm:pl-2px">
+    <div class="container background-container px-28 py-5 navx sm:pl-2px">
       <nav class="flex">
         <img src="images/logo.svg" class="media-logo" alt="logo" />
         <img class="media-ham" src="images/icon-hamburger.svg" alt="" />
@@ -51,18 +51,20 @@
     <!-- Hero Section -->
     <div class="flex Hero-Section">
       <div class="flex-1 pl-28 hi pt-40">
-        <h1 class="font-normal text-5xl">
-          Next generation <br />digital banking
-        </h1>
-        <h4 class="leading-6.5 py-5 font-normal heroH">
-          Take your financial life online. Your Easybank account <br />
-          will be a one-stop-shop for spending, saving, <br />
-          budgeting, investing, and much more.
-        </h4>
-        <div>
-          <a href="#" class="bg-[#31d35c] link-txt rounded-3xl py-2 px-10"
-            >Request Invite</a
-          >
+        <div class="hero-container">
+          <h1 class="font-normal hero-container-text text-5xl">
+            Next generation <br />digital banking
+          </h1>
+          <h4 class="leading-6.5 py-5 font-normal heroH">
+            Take your financial life online. Your Easybank account <br />
+            will be a one-stop-shop for spending, saving, <br />
+            budgeting, investing, and much more.
+          </h4>
+          <div>
+            <a href="#" class="bg-[#31d35c] link-txt rounded-3xl py-2 px-10"
+              >Request Invite</a
+            >
+          </div>
         </div>
       </div>
 
@@ -83,8 +85,8 @@
       </h4>
 
       <div class="why-flex">
-        <div class="pr-3">
-          <img src="images/icon-online.svg" class="py-5 why-img" alt="" />
+        <div class="whydiv">
+          <img src="images/icon-online.svg" class="why-img" alt="" />
           <h3 class="font-bold text-xl py-5">Online banking</h3>
           <p class="whyH">
             Our modern web and mobile <br />
@@ -97,7 +99,7 @@
           <img src="images/icon-budgeting.svg" class="py-5 why-img" alt="" />
           <h3 class="font-bold text-xl py-5">Simple Budgeting</h3>
           <p class="whyH">
-            See exactly where your money <br />
+            d See exactly where your money <br />
             goes each month. Receive <br />
             notifications when you’re close to <br />
             hitting your limits.
@@ -127,56 +129,66 @@
     </div>
 
     <!-- Article -->
-    <div class="article pl-28 py-28">
+    <div class="article">
       <h1 class="font-bold py-10 text-2xl">Latest Articles</h1>
 
       <div class="article-flex">
         <div class="pr-5">
-          <img class="art-img" src="images/image-currency.jpg" alt="" />
-          <div class="article-box">
-            <h4 class="art-h">By Claire Robinson</h4>
-            <p class="art-p1">Receive money in any currency with no fees</p>
-            <p class="art-p2">
-              he world is getting smaller and we’re becoming more mobile. So why
-              should you be forced to only receive money in a single …
-            </p>
+          <div class="art-container">
+            <img class="art-img" src="images/image-currency.jpg" alt="" />
+            <div class="article-box">
+              <h4 class="art-h">By Claire Robinson</h4>
+              <p class="art-p1">Receive money in any currency with no fees</p>
+              <p class="art-p2">
+                he world is getting smaller and we’re becoming more mobile. So
+                why should you be forced to only receive money in a single …
+              </p>
+            </div>
           </div>
         </div>
         <div class="pr-5">
-          <img class="art-img" src="images/image-restaurant.jpg" alt="" />
-          <div class="article-box">
-            <h4 class="art-h">By Wilson Hutton</h4>
-            <p class="art-p1">Treat yourself without worrying about money</p>
-            <p class="art-p2">
-              Our simple budgeting feature allows you to separate out your
-              spending and set realistic limits each month. That means you …
-            </p>
+          <div class="art-container">
+            <img class="art-img" src="images/image-restaurant.jpg" alt="" />
+            <div class="article-box">
+              <h4 class="art-h">By Wilson Hutton</h4>
+              <p class="art-p1">Treat yourself without worrying about money</p>
+              <p class="art-p2">
+                Our simple budgeting feature allows you to separate out your
+                spending and set realistic limits each month. That means you …
+              </p>
+            </div>
           </div>
         </div>
+
         <div class="pr-5">
-          <img class="art-img" src="images/image-plane.jpg" alt="" />
-          <div class="article-box">
-            <h4 class="art-h">By Wilson Hutton</h4>
-            <p class="art-p1">Take your Easybank card wherever you go</p>
-            <p class="art-p2">
-              We want you to enjoy your travels. This is why we don’t charge any
-              fees on purchases while you’re abroad. We’ll even show you …
-            </p>
+          <div class="art-container">
+            <img class="art-img" src="images/image-plane.jpg" alt="" />
+            <div class="article-box">
+              <h4 class="art-h">By Wilson Hutton</h4>
+              <p class="art-p1">Take your Easybank card wherever you go</p>
+              <p class="art-p2">
+                We want you to enjoy your travels. This is why we don’t charge
+                any fees on purchases while you’re abroad. We’ll even show you …
+              </p>
+            </div>
           </div>
         </div>
+
         <div class="pr-5">
-          <img class="art-img" src="images/image-confetti.jpg" alt="" />
-          <div class="article-box">
-            <h4 class="art-h">By Claire Robinson</h4>
-            <p class="art-p1">
-              Our invite-only Beta <br />
-              accounts are now live!
-            </p>
-            <p class="art-p2">
-              After a lot of hard work by the whole team, we’re excited to
-              launch our closed beta. It’s easy to request an invite through the
-              site ...
-            </p>
+          <div class="art-container">
+            <img class="art-img" src="images/image-confetti.jpg" alt="" />
+            <div class="article-box">
+              <h4 class="art-h">By Claire Robinson</h4>
+              <p class="art-p1">
+                Our invite-only Beta <br />
+                accounts are now live!
+              </p>
+              <p class="art-p2">
+                After a lot of hard work by the whole team, we’re excited to
+                launch our closed beta. It’s easy to request an invite through
+                the site ...
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -202,22 +214,26 @@
         </div>
       </div>
 
-      <div>
-        <h2 class="footerh">About Us</h2>
-        <h2 class="footerh">Contact</h2>
-        <h2 class="footerh">Blog</h2>
-      </div>
-      <div>
-        <h3 class="footerh">Careers</h3>
-        <h3 class="footerh">Support</h3>
-        <h3 class="footerh">Privacy Policy</h3>
+      <div class="social">
+        <div>
+          <h2 class="footerh">About Us</h2>
+          <h2 class="footerh">Contact</h2>
+          <h2 class="footerh">Blog</h2>
+        </div>
+        <div>
+          <h3 class="footerh">Careers</h3>
+          <h3 class="footerh">Support</h3>
+          <h3 class="footerh">Privacy Policy</h3>
+        </div>
       </div>
 
-      <div class="footer-btn">
-        <a href="#" class="bg-[#31d35c] link-txt rounded-3xl py-2 px-10"
-          >Request Invite</a
-        >
-        <h4 class="footer-txt">© Easybank. All Rights Reserved</h4>
+      <div class="footerlast">
+        <div class="footer-btn">
+          <a href="#" class="bg-[#31d35c] link-txt rounded-3xl py-2 px-10"
+            >Request Invite</a
+          >
+          <h4 class="footer-txt">© Easybank. All Rights Reserved</h4>
+        </div>
       </div>
     </div>
     <script src="script.js"></script>
