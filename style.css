@@ -1,0 +1,105 @@
+/* Hero Section */
+.link-txt {
+  color: white;
+}
+a,
+.heroH,
+.whyH {
+  color: grey;
+}
+
+.navx {
+  /* position: ; */
+  z-index: 1;
+}
+.Hero-Section {
+  background-color: hsl(0, 0%, 98%);
+}
+
+.hero-image-container {
+  background-image: url(images/bg-intro-desktop.svg);
+  background-size: cover;
+  width: 800px;
+  height: 600px;
+}
+
+.hero-image {
+  height: 800px;
+  position: relative;
+  right: -120px;
+}
+.why {
+  background-color: hsl(220, 16%, 96%);
+}
+.article {
+  background-color: hsl(0, 0%, 98%);
+  padding-right: 100px;
+}
+.art-img {
+  width: 291.2px;
+  height: 200px;
+
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+.article-box {
+  padding: 20px;
+  box-shadow: 1px 1px 1px 1px hsl(220, 16%, 96%);
+}
+
+.art-p1 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.art-p2 {
+  color: gray;
+}
+.art-h {
+  font-size: 14px;
+  color: gray;
+}
+
+.footer {
+  background-color: hsl(233, 26%, 24%);
+}
+
+.footerh {
+  color: white;
+  padding: 10px 50px;
+}
+
+.footer-btn {
+  padding-top: 20px;
+  padding-left: 200px;
+  columns: white;
+}
+.footer-txt {
+  color: white;
+  padding-top: 30px;
+  color: gray;
+}
+.footerh:hover,
+.art-p1:hover {
+  color: hsl(136, 65%, 51%);
+}
+.footer-img {
+  padding-top: 20px;
+}
+.footer-img:hover {
+  color: hsl(136, 65%, 51%);
+}
+.footer-social {
+  padding-left: 105px;
+  padding-top: 50px;
+}
+
+a,
+h1,
+h2,
+h3,
+h4,
+p {
+  font-family: "Public Sans", sans-serif;
+}
