@@ -1,6 +1,6 @@
 "use script";
 
-let nav = document.querySelectorAll(".nav-link");
+let nav = document.querySelectorAll(".navlink");
 nav.forEach(function (el) {
   el.addEventListener("click", function () {
     nav.forEach(function (link) {
