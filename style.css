@@ -1,7 +1,11 @@
 * {
-  padding: 0;
   margin: 0;
+  padding: 0;
 }
+a {
+  text-decoration: none;
+}
+
 a,
 h1,
 h2,
@@ -10,294 +14,111 @@ h4,
 h5 p {
   font-family: "Public Sans", sans-serif;
 }
-div a {
-  text-decoration: none;
-  color: white;
-}
-/* Header */
-header {
-  display: flex;
-  justify-content: space-evenly;
-  padding: 15px;
-  position: relative;
-  z-index: 10;
-}
-
-ul {
-  display: flex;
-}
-ul li {
-  list-style-type: none;
-  padding: 0 20px;
-}
-
-.btn {
-  background: linear-gradient(to left, hsl(136, 65%, 51%), hsl(90, 90%, 40%));
-  margin-top: -5px;
-  color: white;
-  padding: 10px 20px;
-  border-radius: 20px;
-}
-.hamburg1,
-.invisible,
-.hamburg2 {
-  display: none;
-}
-
-/* Hero  */
-.Hero-Section {
-  display: flex;
-  justify-content: center;
-  background-image: url(images/bg-intro-desktop.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position-y: -400px;
-  background-position-x: 570px;
-  overflow: hidden;
-}
-
-.Hero-Btn {
-  background: linear-gradient(to left, hsl(136, 65%, 51%), hsl(90, 90%, 40%));
-  color: white;
-  padding: 10px 20px;
-  border-radius: 20px;
-  width: 150px;
-}
-
-.Hero-Img {
-  transform: translate(250px, -120px);
-  width: 700px;
-}
-
-.Hero-Text {
-  padding-top: 150px;
-  padding-left: 50px;
-}
-.Hero-Text h1 {
-  font-size: 45px;
-}
-
-.Hero-Text P {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  line-height: 1.5rem;
-}
-
-/* WHY SECTION */
-.Why-Section {
-  background-color: hsl(220, 16%, 96%);
-  padding-left: 180px;
-  padding-right: 180px;
-  padding-top: 50px;
-  padding-bottom: 100px;
-  margin-top: -250px;
-}
-
-.Why-Flex {
-  display: flex;
-}
-
-.Why-Item {
-  padding: 10px;
-}
-
-.Why-Section P,
-.Hero-Text p {
-  color: gray;
-  padding-top: 20px;
-}
-
-.Why-Item img {
-  padding-bottom: 20px;
-  padding-top: 50px;
-  width: 50px;
-}
-.Why-Item p {
-  color: gray;
-  padding-top: 20px;
-}
-
-.Article {
-  padding-left: 180px;
-  padding-right: 180px;
-  padding-top: 50px;
-  padding-bottom: 50px;
-}
-.Article-Flex {
-  display: flex;
-}
-
-.Article-Item {
-  padding: 0;
-  box-shadow: 1px 1px 1px 1px hsl(220, 16%, 96%);
-  margin-right: 20px;
-  margin-top: 30px;
-  border-top-right-radius: 5px;
-  border-top-left-radius: 5px;
-}
-
-.Article-Item img {
-  height: 200px;
-  width: 100%;
-  border-top-right-radius: 5px;
-  border-top-left-radius: 5px;
-}
-
-.Article-Text {
-  padding: 20px 10px;
-}
-
-.Article-Text h5 {
-  padding-bottom: 10px;
-}
-
-.Article-Text h5,
-.Article-P2 {
-  color: gray;
-  padding-top: 10px;
-}
-.Article-P1 {
-  font-weight: 600;
-}
-.Article-P1:hover {
-  color: hsl(136, 65%, 51%);
-}
-
-/* Footer */
-footer {
-  background-color: hsl(233, 26%, 24%);
-  display: flex;
-  justify-content: space-around;
-  padding: 20px;
-}
-
-.Footer-H {
-  display: flex;
-}
-
-.Footer-H h4 {
-  color: white;
-}
-.Footer-H h4:hover {
-  color: hsl(90, 90%, 40%);
-}
-.Footer-hh {
-  color: white;
-  padding-top: 23px;
-  padding-right: 100px;
-}
-footer .img {
-  padding-right: 10px;
-  padding-top: 60px;
-}
-.footer-btn {
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-.fth {
-  position: relative;
-  right: 40px;
-}
-
-@media screen and (max-width: 400px) {
-  .navlinks,
-  .nav-btn,
-  .hamburg2 {
-    display: none;
-  }
-  .hamburg1 {
-    display: flex;
-  }
-
+@media screen and (min-width: 700px) {
+  /* Header */
   header {
     display: flex;
-    padding: 15px 30px;
-    justify-content: space-between;
-  }
-  .IVHERO {
-    background-color: white;
-    width: 90%;
-    height: 320px;
-    text-align: center;
-    margin: 20px;
-    z-index: 10;
-  }
-  .IVHERO p {
-    font-size: 20px;
-    padding: 20px;
-  }
-
-  .Hero-Section {
-    display: block;
-    background-image: url(images/bg-intro-mobile.svg);
-    background-repeat: no-repeat;
+    justify-content: space-evenly;
+    padding: 15px;
     position: relative;
+  }
+
+  ul {
+    display: flex;
+  }
+  ul li {
+    list-style-type: none;
+    padding: 0 20px;
+  }
+
+  .btn {
+    background: linear-gradient(to left, hsl(136, 65%, 51%), hsl(90, 90%, 40%));
+    margin-top: -5px;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+  }
+  .hamburger {
+    display: none;
+  }
+  a {
+    color: white;
+  }
+  .nav-btn a {
+    background: linear-gradient(to left, hsl(136, 65%, 51%), hsl(90, 90%, 40%));
+    margin-top: -5px;
+    padding: 10px 20px;
+    border-radius: 20px;
+  }
+
+  /* Hero  */
+  .Hero-Section {
+    display: flex;
+    justify-content: center;
+    background-image: url(images/bg-intro-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: -400px;
+    background-position-x: 600px;
     overflow: hidden;
-    background-position-y: 0;
-    background-position-x: 0;
-  }
-
-  .Hero-Img {
-    position: absolute;
-    top: -40px;
-    width: 90%;
-    padding-left: 15px;
-    transform: translate(0px, 0px);
-    width: 95%;
-    height: 500px;
-  }
-
-  .Hero-Text {
-    padding-top: 500px;
-    padding-left: 5px;
-    padding-right: 5px;
-    text-align: center;
-  }
-  .Hero-Text h1,
-  .Hero-Text p {
-    padding-top: 15px;
-  }
-  .Hero-Text p {
-    padding-bottom: 15px;
   }
 
   .Hero-Btn {
     background: linear-gradient(to left, hsl(136, 65%, 51%), hsl(90, 90%, 40%));
-    margin-left: 80px;
+    color: white;
     padding: 10px 20px;
     border-radius: 20px;
     width: 150px;
   }
 
-  /* Why section */
+  .Hero-Img {
+    transform: translate(100px, -120px);
+    width: 700px;
+  }
+  .Hero-Text {
+    padding-top: 150px;
+    padding-left: 180px;
+  }
 
+  .Hero-Text h1 {
+    font-size: 45px;
+  }
+
+  .Hero-Text p {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    line-height: 1.5rem;
+    margin-right: 130px;
+    color: gray;
+  }
+
+  /* Why section */
   .Why-Section {
     background-color: hsl(220, 16%, 96%);
-    padding-top: 30px;
-    padding-left: 15px;
-    padding-bottom: 50px;
-    padding-right: 15px;
-    margin-top: 50px;
-    text-align: center;
+    padding-left: 180px;
+    padding-right: 180px;
+    padding-top: 50px;
+    padding-bottom: 100px;
+    margin-top: -250px;
+  }
+  .ppp {
+    padding-top: 20px;
+    padding-right: 500px;
   }
   .Why-Flex {
-    display: block;
+    display: flex;
   }
-  .Why-Section h1 {
-    padding-top: 10px;
-    padding-bottom: 10px;
+  .Why-Section P,
+  .Hero-Text p {
+    color: gray;
+    padding-top: 20px;
   }
   .Why-Item {
-    padding-top: 30px;
+    padding: 10px;
   }
-  .Why-Item h3 {
-    padding-top: 10px;
-    padding-bottom: 10px;
-  }
-
   .Why-Item img {
-    padding-bottom: 10px;
-    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-top: 50px;
     width: 50px;
   }
   .Why-Item p {
@@ -305,87 +126,237 @@ footer .img {
     padding-top: 20px;
   }
 
-  /* Article */
+  /* article */
+
   .Article {
-    display: block;
-    margin-top: 50px;
-    text-align: center;
-    padding-left: 60px;
-    margin-bottom: 50px;
-    padding-right: 0;
+    padding-left: 180px;
+    padding-right: 180px;
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
   .Article-Flex {
-    display: block;
+    display: flex;
   }
-  .Article h1 {
-    text-align: center;
+  .Article-Item img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 150px;
+    width: 100%;
   }
-
   .Article-Item {
+    background-color: white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 300px;
     box-shadow: 1px 1px 1px 1px hsl(220, 16%, 96%);
     margin-right: 20px;
     margin-top: 30px;
-    border-top-right-radius: 5px;
-    border-top-left-radius: 5px;
-    width: 280px;
   }
-
-  .Article-Item img {
-    height: 200px;
-    width: 100%;
-    border-top-right-radius: 5px;
-    border-top-left-radius: 5px;
-  }
-
   .Article-Text {
     text-align: left;
-    padding: 20px 10px 20px 30px;
+    padding: 20px;
   }
-  .Article-Text h5,
-  .Article-Text p {
-    padding-top: 10px;
-  }
-
-  .Article-Text h5,
-  .Article-P2 {
+  .Article-Text h5 {
     color: gray;
+    padding-bottom: 5px;
   }
-  .Article-P1 {
-    font-weight: 600;
+  .Article-Text .Article-P2 {
+    color: gray;
+    padding-top: 5px;
   }
-  .Article-P1:hover {
-    color: hsl(136, 65%, 51%);
-  }
-
-  /* Footer */
+  /* footer */
   footer {
-    display: block;
     background-color: hsl(233, 26%, 24%);
-    justify-content: center;
-    text-align: center;
+    display: flex;
+    justify-content: space-around;
     padding: 20px;
   }
   .Footer-H {
-    display: block;
+    display: flex;
   }
 
   .Footer-H h4 {
     color: white;
-    padding: 10px;
   }
   .Footer-H h4:hover {
     color: hsl(90, 90%, 40%);
   }
   .Footer-hh {
     color: white;
+    padding-top: 23px;
+    padding-right: 100px;
   }
   footer .img {
     padding-right: 10px;
-    padding-top: 20px;
+    padding-top: 60px;
+  }
+  .footer-btn {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .fth {
+    position: relative;
+    right: 40px;
+  }
+  .footer-btn a {
+    background: linear-gradient(to left, hsl(136, 65%, 51%), hsl(90, 90%, 40%));
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    width: 150px;
   }
 
-  .footer-btn {
-    margin-top: 10px;
-    margin-bottom: 20px;
+  @media screen and (max-width: 450px) {
+    .navlinks {
+      text-align: center;
+      background-color: white;
+      box-shadow: 0.5px 0.5px 250px 250px rgba(0, 0, 0, 0.3);
+      color: hsl(233, 26%, 24%);
+      padding-top: 20px;
+      padding-bottom: 20px;
+      border-radius: 10px;
+      width: 90%;
+      margin: auto;
+      margin-top: 40px;
+      display: none;
+    }
+    .nav-btn,
+    .hamburg2 {
+      display: none;
+    }
+    ul li {
+      list-style-type: none;
+      margin: 30px;
+      font-weight: 700;
+      font-size: 17px;
+    }
+    header {
+      display: flex;
+      background: white;
+      justify-content: space-between;
+      margin: 20px;
+    }
+
+    /* Hero */
+    .Hero-Section {
+      background-image: url(images/bg-intro-mobile.svg);
+      background-size: contain;
+      background-repeat: no-repeat;
+      overflow: hidden;
+    }
+    .Hero-Img {
+      width: 90%;
+      height: 600px;
+      position: relative;
+      top: -350px;
+      margin-left: 20px;
+    }
+    .footer-social img {
+      padding: 10px;
+    }
+    .Hero-Text {
+      position: relative;
+      top: 500px;
+      text-align: center;
+      margin: 0 20px;
+    }
+    .Hero-Text h1 {
+      font-weight: 800;
+      color: hsl(233, 26%, 24%);
+      margin-bottom: 20px;
+    }
+    .Hero-Text p {
+      color: gray;
+      line-height: 20px;
+      margin-bottom: 40px;
+    }
+
+    .Hero-Btn a {
+      background: linear-gradient(
+        to left,
+        hsl(136, 65%, 51%),
+        hsl(90, 90%, 40%)
+      );
+      color: white;
+      padding: 10px 20px;
+      border-radius: 20px;
+      width: 150px;
+    }
+
+    /* why section */
+
+    .Why-Section {
+      text-align: center;
+      padding: 40px 20px;
+      background-color: hsl(220, 16%, 96%);
+    }
+    .Why-Item {
+      margin: 50px 20px;
+    }
+    .Why-Item h3 {
+      color: hsl(233, 26%, 24%);
+      padding-top: 10px;
+      padding-bottom: 20px;
+    }
+    .Why-Item p {
+      color: gray;
+      line-height: 25px;
+    }
+
+    /* Article */
+    .Article {
+      text-align: center;
+      padding-top: 30px;
+      background-color: hsl(0, 0%, 98%);
+      margin: 0;
+    }
+    .Article-Item img {
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      width: 100%;
+    }
+    .Article-Item {
+      background-color: white;
+      margin-top: 50px;
+      margin: 50px auto;
+      width: 300px;
+    }
+    .Article-Text {
+      text-align: left;
+      padding: 20px;
+    }
+    .Article-Text h5 {
+      color: gray;
+      padding-bottom: 5px;
+    }
+    .Article-Text .Article-P2 {
+      color: gray;
+      padding-top: 5px;
+    }
+
+    /* Footer */
+    footer {
+      background-color: hsl(233, 26%, 24%);
+      text-align: center;
+      padding: 30px;
+    }
+    footer h4 {
+      color: white;
+      padding-top: 20px;
+    }
+    .footer-btn {
+      margin-top: 30px;
+    }
+    .footer-btn a {
+      background: linear-gradient(
+        to left,
+        hsl(136, 65%, 51%),
+        hsl(90, 90%, 40%)
+      );
+      color: white;
+      padding: 10px 20px;
+      border-radius: 20px;
+      width: 150px;
+    }
   }
 }
